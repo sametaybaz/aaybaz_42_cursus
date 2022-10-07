@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 14:16:22 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/06 18:27:07 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/07 15:34:49 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 
 void				*ft_memset(void *b, int c, size_t len);
-
+void                 ft_bzero(void *s, size_t n);
 #endif
