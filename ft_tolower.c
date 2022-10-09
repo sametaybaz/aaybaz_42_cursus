@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 16:09:18 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 16:28:15 by aaybaz           ###   ########.fr       */
+/*   Created: 2022/10/08 17:35:48 by aaybaz            #+#    #+#             */
+/*   Updated: 2022/10/08 17:35:48 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+int		ft_tolower(int c)
 {
-	size_t	i;
+	if (c >= 'A' && c <= 'Z')
+		return (c + 'a' - 'A');
+	else
+		return (c);
+}
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-/*
-int main()
-{
-	printf("%zu" , ft_strlen("samet"));
-}
-*/
+// return (c + 'a' - 'A') 
+// 'a'(97) for we want return lowercase 
+// c - 'A'(65) for add upp the difference to 'a'

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 17:50:01 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/06 18:27:54 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/09 18:49:02 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,9 @@ int main()
 	ft_memset(str,'b',2);
 	printf("%s",str); 
 }
+// The memset() function fills the first n bytes of the memory 
+// area pointed to by s with the constant byte c.
+
+// Fill byte of(two) the memory area with character('b') our str 
+// and start to fill of adress first element of str .
 */

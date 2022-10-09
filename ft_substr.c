@@ -1,29 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 16:09:18 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 16:28:15 by aaybaz           ###   ########.fr       */
+/*   Created: 2022/10/09 23:14:45 by aaybaz            #+#    #+#             */
+/*   Updated: 2022/10/09 23:14:45 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-/*
-int main()
-{
-	printf("%zu" , ft_strlen("samet"));
-}
-*/

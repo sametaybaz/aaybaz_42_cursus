@@ -1,29 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 16:09:18 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 16:28:15 by aaybaz           ###   ########.fr       */
+/*   Created: 2022/10/08 20:49:11 by aaybaz            #+#    #+#             */
+/*   Updated: 2022/10/08 20:49:11 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	int i;
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	i = ft_strlen(s);
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return ((char *)s + i);
+		i--;
+	}
+	return (0);
 }
+
 /*
 int main()
 {
-	printf("%zu" , ft_strlen("samet"));
+    char s[] = "samet";
+
+    printf("%s",ft_strrchr(s,'m')); // output will be met
 }
+
+// ft_strrchr works oppusite direction than ft_strchr .
+// so ft_strrchr search matching char 'm' inside s string 
+// but when search ıt go from end to start of s string.
 */

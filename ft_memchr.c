@@ -1,29 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 16:09:18 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 16:28:15 by aaybaz           ###   ########.fr       */
+/*   Created: 2022/10/08 22:59:33 by aaybaz            #+#    #+#             */
+/*   Updated: 2022/10/08 22:59:33 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (i < n)
+	{
+		if (((unsigned char*)s)[i] == (unsigned char)c)
+			return ((void*)(s + i));
 		i++;
-	return (i);
+	}
+	return (NULL);
 }
 /*
 int main()
 {
-	printf("%zu" , ft_strlen("samet"));
+    char s[] = "samet";
+    printf("%s",ft_memchr(s,'m',3)); // output will be met 
 }
+
+// ft_memchr is search(by indexing) n bytes of the memory area
+// for find  matching char('m') inside string(s).
+// The diffrence just n paremter than strchr .
 */

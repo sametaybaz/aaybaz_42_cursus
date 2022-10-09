@@ -1,29 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 16:09:18 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 16:28:15 by aaybaz           ###   ########.fr       */
+/*   Created: 2022/10/08 17:11:49 by aaybaz            #+#    #+#             */
+/*   Updated: 2022/10/08 17:11:49 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+int		ft_toupper(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	if (c >= 'a' && c <= 'z')
+		return (c + 'A' - 'a');
+	else
+		return (c);
 }
+
 /*
 int main()
 {
-	printf("%zu" , ft_strlen("samet"));
+    char c = 'a';
+    char c_1 = 'b';
+    printf("%d",ft_toupper(c));
+    printf("\n%d",ft_toupper(c_1));
 }
+// if type 'a' it will return 65 so this equal this ascii 'A'
+// so return ('a'(97) + 'A'(65) - 'a'(97) ) = 'A'  = 65
+
+// if type 'b it will return ;
+// return ('b'(98) + 'A'(65) - 'a'(97) ) = 'B'  = 66
 */
+
