@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 14:16:22 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 23:00:41 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 02:03:48 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,5 @@ int		            ft_memcmp(const void *s1, const void *s2, size_t n);
 char	            *ft_strnstr(const char *str, const char *find_substr, size_t len);
 void	            *ft_calloc(size_t count, size_t size);
 char	            *ft_strdup(const char *str);
+char                *ft_substr(char const *s, unsigned int start, size_t len);
 #endif
