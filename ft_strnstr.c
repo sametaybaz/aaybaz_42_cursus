@@ -6,10 +6,9 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 14:17:53 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 14:17:53 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:42:47 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -22,12 +21,13 @@ char	*ft_strnstr(const char *str, const char *find_substr, size_t len)
 	substr_len = ft_strlen((char *)find_substr);
 	while (*str != '\0' && len >= substr_len)
 	{
-		if (*str == *find_substr && ft_memcmp(str, find_substr, substr_len) == 0)
+		if (*str == *find_substr
+			&& ft_memcmp(str, find_substr, substr_len) == 0)
 			return ((char *)str);
 		str++;
-        len--;
+		len--;
 	}
-	return (0); // or NULL
+	return (0);
 }
 
 /*

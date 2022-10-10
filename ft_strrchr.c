@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 20:49:11 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/08 20:49:11 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:44:30 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
+	int	i;
 
 	i = ft_strlen(s);
 	while (i >= 0)

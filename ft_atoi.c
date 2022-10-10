@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   atoi.c                                             :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:34:23 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 16:34:23 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:28:19 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 static int	ft_isspace(int c)
 {
-	if (c == '\v' || c == '\n' || c == '\t' ||
-		c == '\r' || c == '\f' || c == ' ')
+	if (c == '\v' || c == '\n' || c == '\t'
+		|| c == '\r' || c == '\f' || c == ' ')
 		return (1);
 	return (0);
 }
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int		sign;
 	int		result;
@@ -58,4 +58,3 @@ int main(void)
 	return (0);
 }
 */
-

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:44:31 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/08 17:44:31 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:34:14 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,3 @@ int main()
 // it will return chars rest of m with m . (as a point adress)
 // synopis : find match char inside str .
 */
-
-

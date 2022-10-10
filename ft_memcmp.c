@@ -6,13 +6,13 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 00:18:32 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 00:18:32 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:31:23 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
 

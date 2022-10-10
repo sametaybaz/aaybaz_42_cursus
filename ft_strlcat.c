@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:47 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/08 15:12:47 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:46:15 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t c;
-	size_t d;
+	size_t	c;
+	size_t	d;
 
 	if (dstsize <= ft_strlen(dst))
 		return (dstsize + ft_strlen(src));
@@ -30,7 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[c] = '\0';
 	return (ft_strlen(dst) + ft_strlen(&src[d]));
 }
-
+/*
 int main()
 { 
     char dst[] = "samet";
@@ -45,5 +45,4 @@ int main()
 // 7 for dstsize.  
 // if dstsize = 7 will return 10 for total cat length 
 // but ıt will add one char from src and null char to end .
-
-
+*/

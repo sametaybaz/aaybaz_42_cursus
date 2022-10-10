@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 15:45:32 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/07 15:45:32 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:32:40 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	if (dst == NULL && src == NULL)
 		return (NULL);

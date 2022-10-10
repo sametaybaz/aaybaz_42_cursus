@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 20:32:56 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 20:32:56 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:37:02 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 char	*ft_strdup(const char *str)
 {
-	char *cstr;
+	char	*cstr;
 
-	if (!(cstr = (char *)malloc(ft_strlen(str) + 1)))
+	cstr = (char *)malloc(ft_strlen(str) + 1);
+	if (!(cstr))
 		return (0);
 	ft_memcpy(cstr, str, ft_strlen(str) + 1);
 	return (cstr);

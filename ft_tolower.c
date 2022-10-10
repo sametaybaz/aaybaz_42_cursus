@@ -6,13 +6,13 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:35:48 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/08 17:35:48 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 13:44:46 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 'a' - 'A');
