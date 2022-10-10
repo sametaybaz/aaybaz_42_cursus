@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:44:31 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:34:14 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 15:20:53 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ int main()
 // ft_strchr search(by indexing) match 'm' char inside s array   
 // with while loop and if conditioun,if it find match after    
 // it will return chars rest of m with m . (as a point adress)
-// synopis : find match char inside str .
+// synopis : ft_strchr: find match char inside str and return rest of.
 */

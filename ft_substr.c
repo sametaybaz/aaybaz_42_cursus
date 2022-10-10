@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 23:14:45 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:50:05 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/10 15:33:37 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int main()
     printf("%s", sub_str_2);
     return 0;
 }
+// ft_substr : extract substring from string.
 
 // if condition :
 // cheking string(s) doest exist or didnt allocated
