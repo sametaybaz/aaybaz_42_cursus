@@ -14,24 +14,24 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*new_list;
+	t_list	*new_element;
 
-	new_list = malloc(sizeof(t_list));
-	if (!new_list)
+	new_element = malloc(sizeof(t_list));
+	if (new_element == NULL)
 		return (NULL);
-	new_list->content = content;
-	new_list->next = NULL;
-	return (new_list);
+	new_element->content = content;
+	new_element->next = NULL;
+	return (new_element);
 }
 /*
 int main()
 {
     char    *content = "samet";
-    t_list  *new_list;
-    new_list = ft_lstnew((void *)content);
-    printf("%s", new_list->content);
+    t_list  *new_element;
+    new_element = ft_lstnew((void *)content);
+    printf("%s", new_element->content);
 }
-// t_list new_list = {"samet"}
+// t_list new_element = {"samet"}
 
 // you can think like that {{content:"samet",next:NULL}} or 
 // {{"samet",NULL}} but because of null we shoulndt 

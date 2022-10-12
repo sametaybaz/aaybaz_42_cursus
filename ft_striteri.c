@@ -41,5 +41,5 @@ void my_func(unsigned int i, char *str)
 }
 // f function take an as addressi each charcter from s (string)
 // by indexing for modify but doest retun anything. so ;
-// each element is turning of str and appliying f function. 
+// each char is turning of str and appliying f function. 
 */

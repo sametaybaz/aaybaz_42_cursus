@@ -26,7 +26,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	*lst = NULL;
 }
 
-// clear list each element thats why we using next variable
-// if we have next element tmp is keeping this and after
-// The first element is del and free firstly, then the  
-// next element is del and free.
+/* ** clear list each element thats why we using next variable
+** if we have next element tmp is keeping this and after
+** The first element is del and free firstly, then the  
+** next element is del and free. */

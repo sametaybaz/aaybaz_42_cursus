@@ -21,8 +21,8 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
+/* 
 // Returns the last element of the list.
-/*
 int		main(void)
 {
 	char	str1[] = "first element";

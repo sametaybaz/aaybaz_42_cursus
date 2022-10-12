@@ -21,8 +21,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 }
 
-// each element turns of lst with while loop and f function 
-// apply each element .
 /*
 void ft_putstr(char *str)
 {
@@ -37,4 +35,6 @@ int main ()
 	ft_lstadd_back(&a, ft_lstnew("aybaz"));
 	ft_lstiter(a, (void (*)(void *))ft_putstr);
 }
+// each element turns of lst with while loop and f function 
+// apply each element .
 */

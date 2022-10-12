@@ -13,12 +13,14 @@
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
-{
+{	
+	if (!*lst)
+		*lst = new;
 	new->next = *lst;
 	*lst = new;
 }
-/*
-// ft_lst_add_front will provide Adds the element 'new'
+
+/* // ft_lst_add_front will provide Adds the element 'new'
 // at the beginning of the list.
 // my_tlist = {{content2,content1}}; or you can think like ;
 // my_tlist = {{content: content2, next : {content: content1,next: NULL}}};
@@ -36,5 +38,4 @@ int main()
 	printf("The result is %s\n", (char *)my_tlist[0].content);
  	printf("The result is %s\n", (char *)my_tlist[0].next->content);
  	return 0;
-}
-*/
+} */
