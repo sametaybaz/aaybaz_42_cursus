@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 23:14:45 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 15:33:37 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 15:56:31 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,26 +32,29 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub_str[j] = '\0';
 	return (sub_str);
 }
-/*
-int main()
-{   
-    char *sub_str;
-    char *sub_str_2;
-    sub_str = ft_substr("Samet Aybaz", 6, 5); // output Aybaz
-    sub_str_2 = ft_substr("Samet", 2, 3); // output met
-    printf("%s\n", sub_str);
-    printf("%s", sub_str_2);
-    return 0;
-}
-// ft_substr : extract substring from string.
 
-// if condition :
-// cheking string(s) doest exist or didnt allocated
-// memory area for sub_str then return (NULL)
+/* 
+** int main()
+** {   
+**    char *sub_str;
+**    char *sub_str_2;
+**    sub_str = ft_substr("Samet Aybaz", 6, 5);
+**    sub_str_2 = ft_substr("Samet", 2, 3);
+**    printf("%s\n", sub_str);
+**    printf("%s", sub_str_2);
+**    return 0;
+** } 
+*/
 
-// while loop :
-// (i) will be start indexing first element substr and (j) will 
-// indexing as substr len and meanwhile it will copied sub_str
-// from (s) and It will fill allocated area for sub_str.
+/* 
+** ft_substr : extract substring from string.
+** sub_str = output Aybaz sub_str_2 = output met
+** if condition :
+** cheking string(s) doest exist or didnt allocated
+** memory area for sub_str then return (NULL)
 
+** while loop :
+** (i) will be start indexing first element substr and (j) will 
+** indexing as substr len and meanwhile it will copied sub_str
+** from (s) and It will fill allocated area for sub_str. 
 */

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 23:56:24 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:38:02 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 15:07:57 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,19 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	return (srcsize);
 }
-/*
-int main() 
-{ 
-    char dst[] = "samet";
-    char src[] = "aybaz";
 
-    printf("%zu",ft_strlcpy(dst,src,2));
-}
+/* 
+** int main() 
+** { 
+**    char dst[] = "samet";
+**    char src[] = "aybaz";
+**
+**    printf("%zu",ft_strlcpy(dst,src,2));
+** } 
+*/
 
-// Copies up to 'dstsize - 1' characters from string 'src' to 'dst'.
-// -1 for put null character after exiting while loop , after 
-// return src size(len). 
-
+/* 
+** Copies up to 'dstsize - 1' characters from string 'src' to 'dst'.
+** -1 for null char put null character after exiting while loop , after 
+** return src size(len).
 */

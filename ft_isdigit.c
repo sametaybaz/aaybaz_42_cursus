@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:46:25 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/06 14:42:33 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 13:50:06 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int	ft_isdigit(int c)
 }
 
 /*
-int main()
-{
-    printf("%d",ft_isdigit('2'));
-    printf("\n%d",ft_isdigit(2)); 
-}
+** int main()
+** {
+**    printf("%d",ft_isdigit('2'));
+**    printf("\n%d",ft_isdigit(2)); 
+** }
 */

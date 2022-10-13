@@ -6,16 +6,15 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 17:32:38 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/12 17:32:38 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 13:52:53 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *last;
+	t_list	*last;
 
 	if (!*lst)
 		*lst = new;
@@ -23,4 +22,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last->next = new;
 }
 
-/* add new element end of the list and return anything . */
+/* 
+** add new element end of the list and return anything. 
+*/

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 15:06:54 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/11 15:06:54 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 14:56:15 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int i;
+	int	i;
 
 	if (s && f)
 	{
@@ -27,19 +27,22 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-/*
-void my_func(unsigned int i, char *str)
-{
-	printf("address is point: index = %d and the string is %s\n", i, str);
-}
+/* 
+** void my_func(unsigned int i, char *str)
+** {
+**	printf("address is point: index = %d and the string is %s\n", i, str);
+** }
+**
+** int main()
+** {
+**	  char str[] = "samet";
+**    ft_striteri(str, my_func);
+**    return 0;
+** } 
+*/
 
- int main()
-{
-	char str[] = "samet";
-    ft_striteri(str, my_func);
-    return 0;
-}
-// f function take an as addressi each charcter from s (string)
-// by indexing for modify but doest retun anything. so ;
-// each char is turning of str and appliying f function. 
+/* 
+** f function take an as addressi each charcter from s (string)
+** by indexing for modify but doest retun anything. so ;
+** each char is turning of str and appliying f function.
 */

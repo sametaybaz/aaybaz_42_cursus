@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 15:25:22 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/06 15:33:02 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 13:48:54 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ int	ft_isascii(int c)
 	return (0);
 }
 /*
-int main()
-{
-	printf("%d",ft_isascii('3'));
-	printf("\n%d",ft_isascii(2));
-	printf("\n%d",ft_isascii('a'));
-	printf("\n%d",ft_isascii(' '));
-}
+** int main()
+** {
+**	printf("%d",ft_isascii('3'));
+**	printf("\n%d",ft_isascii(2));
+**	printf("\n%d",ft_isascii('a'));
+**	printf("\n%d",ft_isascii(' '));
+** }
 */

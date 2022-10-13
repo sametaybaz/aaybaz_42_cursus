@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 18:51:54 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:26:29 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 13:46:00 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,26 +23,23 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ptr);
 }
 
-/*
-int main(void)
-{   
-    int *ptr;
-    int count;
-    int i;
+/* 
+** int main(void)
+** {   
+**    int *ptr;
+** 	  int count;
+**    int i;
    
-    count = 10;
-    ptr =  (int *)ft_calloc(count,sizeof(int)); // allocated 40 bytes
+**    count = 10;
+**    ptr =  (int *)ft_calloc(count,sizeof(int)); // allocated 40 bytes
     
-    for(i=0; i<count; i++)
-    {
-        printf("%d\n",*ptr);
-    }
-}
+**    for(i=0; i<count; i++)
+**    {
+**        printf("%d\n",*ptr);
+**    }
+** } 
 */
-
-/* delete this .
-The calloc() function in C is used to allocate a specified 
-amount of memory and then initialize it to zero.
-count : how many variables will allocated memory space .
-sizeof(int) : defines for each one variable how many byte allocated in the memory.
-*/
+/* 
+** The calloc() function in C is used to allocate a specified 
+** amount of memory and then initialize it to zero.
+ */

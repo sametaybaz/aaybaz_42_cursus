@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 16:09:18 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/09 16:28:15 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 15:08:57 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 /*
-int main()
-{
-	printf("%zu" , ft_strlen("samet"));
-}
+** int main()
+** {
+**		printf("%zu" , ft_strlen("samet"));
+** }
 */

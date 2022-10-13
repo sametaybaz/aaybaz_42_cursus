@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 20:32:56 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:37:02 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 14:59:40 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,20 @@ char	*ft_strdup(const char *str)
 	return (cstr);
 }
 
-/*
-int main()
-{
-    const char str[] = "samet";
-    char *cstr = ft_strdup(str);
+/* 
+** int main()
+** {
+**    const char str[] = "samet";
+**    char *cstr = ft_strdup(str);
+**
+**    printf("%s",cstr);
+**
+**    return (0);
+** } 
+*/
 
-    printf("%s",cstr);
-
-    return (0);
-}
-
-// Allocated memory area for cstr(copystr) as size of str(src str)
-// after This Allocated area is filled with str copied from str . 
-//  ft_strlen(str) + 1 ; +1 for fill null char 
+/* 
+** Allocated memory area for cstr(copystr) as size of str(src str)
+** after This Allocated area is filled with str copied from str . 
+**  ft_strlen(str) + 1 ; +1 for fill null char 
 */

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 14:17:53 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:42:47 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 15:22:57 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,20 @@ char	*ft_strnstr(const char *str, const char *find_substr, size_t len)
 }
 
 /*
-int main()
-{
-    char str[] = "samet";
+** int main()
+** {
+**    char str[] = "samet";
+**
+**    printf("%s\n",ft_strnstr(str,"",5));
+**    printf("%s",ft_strnstr(str,"met",5));
+** }
+*/
 
-    printf("%s\n",ft_strnstr(str,"",5));
-    printf("%s",ft_strnstr(str,"met",5));
-}
-
-// find a substring inside a string .
-// str = scan string 
-// "met" = to find substring inside str.
-// "5" = substring end of position len(size) inside string 
-// len >= substr_len : It will limited scan str pointer matching 
-// substr first character .
+/*
+** find a substring inside a string .
+** str = scan string 
+** "met" = to find substring inside str.
+** "5" = substring end of position len(size) inside string 
+** len >= substr_len : It will limited scan str pointer matching 
+** substr first character .
 */

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 15:45:32 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:32:40 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 14:28:11 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,18 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-int main()
-{ 
-    char dest[] = "samet"; 
-    char src[] = "aybaz";
 
-    printf("%s",ft_memcpy(dest,src,2));
-} 
-// Copies 'n' bytes from memory area 'src' to memory area 'dst'.
-// and return copied dst from src . 
+/* 
+** int main()
+** { 
+**    char dest[] = "samet"; 
+**    char src[] = "aybaz";
+**
+**    printf("%s",ft_memcpy(dest,src,2));
+** }  
+*/
+
+/*
+** Copies 'n' bytes from memory area 'src' to memory area 'dst'.
+** and return copied dst from src.
 */

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:44:31 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 15:20:53 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 14:51:02 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,19 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-/*
-int main()
-{
-    char s[] = "samet";
 
-    printf("%s",ft_strchr(s,'m')); // output will be met
-}
+/* 
+** int main()
+** {
+**    char s[] = "samet";
+**
+**    printf("%s",ft_strchr(s,'m'));
+** } 
+*/
 
-// ft_strchr search(by indexing) match 'm' char inside s array   
-// with while loop and if conditioun,if it find match after    
-// it will return chars rest of m with m . (as a point adress)
-// synopis : ft_strchr: find match char inside str and return rest of.
+/* 
+** ft_strchr search(by indexing) match 'm' char inside s array   
+** with while loop and if conditioun,if it find match after    
+** it will return chars rest of m with m so return met .
+** synopis : ft_strchr: find match char inside str and return rest of. 
 */

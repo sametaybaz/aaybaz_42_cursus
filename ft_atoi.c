@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:34:23 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:28:19 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 13:46:36 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,18 +43,21 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 
-/*
-// first while : to skip spaces areas
-// first if : to set the mark ( + or - )
-// second while : to convert to decimal system and return digit chars  .
-// static keyword : ft_isspace func. just visible inside ft_atoi func.
+/* 
+** first while : to skip spaces areas
+** first if : to set the mark ( + or - )
+** second while : to convert to decimal system and return digit chars  .
+** static keyword : ft_isspace func. just visible inside ft_atoi func.
+**
+** synopis : atoi digit chars convert to int with sign   
+*/
 
-// synopis : atoi digit chars convert to int with sign  
-
-int main(void)
-{
-	char *s = "   -2147483647"; // output will be -2147483647
-	printf("%d",ft_atoi(s));
-	return (0);
-}
+/* 
+** int main(void)
+** {
+**	char *s = "   -2147483647"; // output will be -2147483647
+**	printf("%d",ft_atoi(s));
+**	return (0);
+** 
+** } 
 */

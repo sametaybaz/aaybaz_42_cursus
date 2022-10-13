@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:46:08 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/06 14:42:10 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 13:48:15 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int	ft_isalpha(int c)
 }
 
 /*
-int main()
-{
-    printf("%d",ft_isalpha(4));
-    printf("\n%d",ft_isalpha('4'));
-    printf("\n%d",ft_isalpha('a'));
-    printf("\n%d",ft_isalpha('A'));
-}
+** int main()
+** {
+**    printf("%d",ft_isalpha(4));
+**    printf("\n%d",ft_isalpha('4'));
+**    printf("\n%d",ft_isalpha('a'));
+**    printf("\n%d",ft_isalpha('A'));
+** }
 */

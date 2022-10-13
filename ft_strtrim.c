@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 15:16:43 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 18:32:00 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 15:51:41 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	result[len] = '\0';
 	return (result);
 }
-/*
-int	main()
-{
-	char s1[] = "samet";
-	char set[] = "st"; // output will be ame 
 
-	printf("%s",ft_strtrim(s1,set));
-}
+/* 
+** int	main()
+** {
+**	char s1[] = "samet";
+**	char set[] = "st"; 
+**
+**	printf("%s",ft_strtrim(s1,set));
+** } 
+*/
+
+/* 
 ** first while trim leading matching (*s1 will point "ame")
 ** second while trim trailing matching (len will be 3 )
-** memcpy fill for trimmed area by s1 and len
+** memcpy fill for trimmed area by s1 and len so we return "ame"
 */

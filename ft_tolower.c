@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:35:48 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 13:44:46 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 16:00:08 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	ft_tolower(int c)
 		return (c);
 }
 
-// return (c + 'a' - 'A') 
-// 'a'(97) for we want return lowercase 
-// c - 'A'(65) for add upp the difference to 'a'
+/* 
+** return (c + 'a' - 'A') 
+** 'a'(97) for we want return lowercase 
+** c - 'A'(65) for add upp the difference to 'a' 
+*/
