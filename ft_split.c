@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 18:43:55 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/10 19:21:57 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/13 20:39:17 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	count_words(const char *str, char c)
 {
-	int i;
-	int trigger;
+	int	i;
+	int	trigger;
 
 	i = 0;
 	trigger = 0;
@@ -46,43 +46,42 @@ static char	*word_dup(const char *str, int start, int finish)
 	return (word);
 }
 
-char		**ft_split(char const *s, char c)
+
+char	**ft_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
 	int		index;
-	char	**split;
+	char	**splited;
+	size_t	s_len;
 
-	if (!s || !(split = malloc((count_words(s, c) + 1) * sizeof(char *))))
+	s_len	= ft_strlen(s);
+	splited = malloc((count_words(s, c) + 1) * sizeof(char *));
+	if (!s || !(splited))
 		return (0);
 	i = 0;
 	j = 0;
 	index = -1;
-	while (i <= ft_strlen(s))
+	while (i <= s_len)
 	{
 		if (s[i] != c && index < 0)
 			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
+		else if ((s[i] == c || i == s_len) && index >= 0)
 		{
-			split[j++] = word_dup(s, index, i);
+			splited[j++] = word_dup(s, index, i);
 			index = -1;
 		}
 		i++;
 	}
-	split[j] = 0;
-	return (split);
+	splited[j] = 0;
+	return (splited);
 }
 
-/*
 int main()
 {
-        int i = 0;
-        char **a;
-        a = ft_split("marhaba.selamlar.mm.m", '.');
+        char str[] = "samet.aybaz";
+        char **a = ft_split(str,'.');
+        
         printf("%s\n",a[0]);
         printf("%s\n",a[1]);
-        printf("%s\n",a[2]);
-        printf("%s",a[3]);
-        // sonra bak .....
 }
-*/
