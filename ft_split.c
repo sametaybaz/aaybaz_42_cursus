@@ -12,76 +12,88 @@
 
 #include "libft.h"
 
-static int	count_words(const char *str, char c)
+int count_strings(char const *s, char c)
 {
-	int	i;
-	int	trigger;
+	int act_pos;
+	int str_count;
 
-	i = 0;
-	trigger = 0;
-	while (*str)
+	act_pos = 0;
+	str_count = 0;
+	if (s[act_pos] == c)
+		str_count--;
+	while (s[act_pos] != '\0')
 	{
-		if (*str != c && trigger == 0)
-		{
-			trigger = 1;
-			i++;
-		}
-		else if (*str == c)
-			trigger = 0;
-		str++;
+		if (s[act_pos] == c && s[act_pos + 1] != c && s[act_pos + 1] != '\0')
+			str_count++;
+		act_pos++;
 	}
-	return (i);
+	str_count++;
+	return (str_count);
 }
 
-static char	*word_dup(const char *str, int start, int finish)
+char *malloc_strings(const char *s, char c)
 {
-	char	*word;
-	int		i;
+	char *word;
+	int i;
 
 	i = 0;
-	word = malloc((finish - start + 1) * sizeof(char));
-	while (start < finish)
-		word[i++] = str[start++];
+	while (s[i] && s[i] != c)
+		i++;
+	word = (char *)malloc(sizeof(char) * (i + 1));
+	if (!word)
+		return (NULL);
+	i = 0;
+	while (s[i] && s[i] != c)
+	{
+		word[i] = s[i];
+		i++;
+	}
 	word[i] = '\0';
 	return (word);
 }
 
-
-char	**ft_split(char const *s, char c)
+char **ft_split(char const *s, char c)
 {
-	size_t	i;
-	size_t	j;
-	int		index;
-	char	**splited;
-	size_t	s_len;
+	int words;
+	char **tab;
+	int i;
 
-	s_len	= ft_strlen(s);
-	splited = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!s || !(splited))
-		return (0);
+	if (!s)
+		return (NULL);
+	words = count_strings(s, c);
+	tab = (char **)malloc(sizeof(char *) * (words + 1));
+	if (!tab)
+		return (NULL);
 	i = 0;
-	j = 0;
-	index = -1;
-	while (i <= s_len)
+	while (*s)
 	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[i] == c || i == s_len) && index >= 0)
+		while (*s && *s == c)
+			s++;
+		if (*s && *s != c)
 		{
-			splited[j++] = word_dup(s, index, i);
-			index = -1;
+			tab[i] = malloc_strings(s, c);
+			i++;
+			while (*s && *s != c)
+				s++;
 		}
-		i++;
 	}
-	splited[j] = 0;
-	return (splited);
+	tab[i] = NULL;
+	return (tab);
 }
 
-int main()
+int main(void)
 {
-        char str[] = "samet.aybaz";
-        char **a = ft_split(str,'.');
-        
-        printf("%s\n",a[0]);
-        printf("%s\n",a[1]);
+	char **tab;
+	unsigned int i;
+
+	i = 0;
+	tab = ft_split("samet.aybaz", '.');
+	if (!tab[0])
+		ft_putendl_fd("ok\n", 1);
+	while (tab[i] != NULL)
+	{
+		ft_putchar_fd('\n',1);
+		ft_putendl_fd(tab[i], 1);
+		i++;
+	}
 }
