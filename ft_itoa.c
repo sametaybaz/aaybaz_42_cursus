@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:44:19 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 13:51:43 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 12:15:30 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ static size_t	ft_sizen(int n, size_t size)
 }
 
 static size_t	check_size(int n)
-{
+{	
+	size_t size;
 	if (n > 0)
 		size = 0;
 	else
