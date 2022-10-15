@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 22:50:30 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 13:08:48 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 15:08:50 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_elem;
 
 	if (!lst)
-		return (0);
+		return (NULL);
 	new_lst = 0;
 	while (lst)
 	{

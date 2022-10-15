@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 18:29:09 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 14:05:47 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 15:07:47 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;
 
-	while (*lst)
+	if (!lst || !del || !*lst)
+		return ;
+	while (*lst && lst)
 	{
 		tmp = (*lst)->next;
 		del((*lst)->content);

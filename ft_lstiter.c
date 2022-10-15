@@ -6,14 +6,16 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 19:03:04 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 14:08:40 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 14:55:20 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
-{
+{	
+	if (!lst || !f)
+		return ;
 	while (lst)
 	{
 		f(lst->content);

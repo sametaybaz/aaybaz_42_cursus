@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:57:08 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 15:12:04 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 17:54:12 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 **	printf("When turn while loop : index = %d and %c\n", i, str);
 ** 	return str - 32;
 ** }
-**
+
 ** int main()
 ** {
 **    char str[10] = "samet";
@@ -46,7 +46,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 **    char *result = ft_strmapi(str, my_func);
 **    printf("Modified state %s\n", result);
 **    return 0;
-** } 
+** }  
 */
 
 /* 

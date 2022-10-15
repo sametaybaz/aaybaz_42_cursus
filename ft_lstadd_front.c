@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:13:19 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 14:05:07 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 14:46:59 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {	
+	if (!new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }

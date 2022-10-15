@@ -6,16 +6,16 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 18:43:55 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/15 12:17:16 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 17:55:27 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int count_strings(char const *s, char c)
+int	count_strings(char const *s, char c)
 {
-	int act_pos;
-	int str_count;
+	int	act_pos;
+	int	str_count;
 
 	act_pos = 0;
 	str_count = 0;
@@ -31,10 +31,10 @@ int count_strings(char const *s, char c)
 	return (str_count);
 }
 
-char *malloc_strings(const char *s, char c)
+char	*malloc_strings(const char *s, char c)
 {
-	char *word;
-	int i;
+	char	*word;
+	int		i;
 
 	i = 0;
 	while (s[i] && s[i] != c)
@@ -52,11 +52,11 @@ char *malloc_strings(const char *s, char c)
 	return (word);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	int words;
-	char **tab;
-	int i;
+	int		words;
+	char	**tab;
+	int		i;
 
 	if (!s)
 		return (NULL);

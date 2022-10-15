@@ -6,14 +6,24 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:44:19 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/15 12:15:30 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 17:53:07 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_sizen(int n, size_t size)
+static	long	ft_len(int n)
 {
+	long	size;
+
+	if (n == 0)
+		return (1);
+	size = 0;
+	if (n < 0)
+	{
+		size++;
+		n = -n;
+	}
 	while (n != 0)
 	{
 		n = n / 10;
@@ -22,48 +32,36 @@ static size_t	ft_sizen(int n, size_t size)
 	return (size);
 }
 
-static size_t	check_size(int n)
-{	
-	size_t size;
-	if (n > 0)
-		size = 0;
-	else
-		size = 1;
-	return (size);
-}
-
-static	long	check_sign(int nbr)
+static	int	ft_sign(int n)
 {
-	if (nbr > 0)
-		nbr = nbr;
-	else
-		nbr = -nbr;
-	return (nbr);
+	if (n < 0)
+		return (1);
+	return (0);
 }
 
 char	*ft_itoa(int n)
 {
+	long	number;
+	long	len;
 	char	*str;
-	long	nbr;
-	size_t	size;
 
-	nbr = n;
-	size = check_size(n);
-	nbr = check_sign(nbr);
-	size = ft_sizen(n, size);
-	str = (char *)malloc(size + 1);
-	if (!(str))
-		return (NULL);
-	*(str + size--) = '\0';
-	while (nbr > 0)
+	number = n;
+	len = ft_len(number);
+	str = (char *)malloc((len + 1) * sizeof(char));
+	if (!str)
+		return (0);
+	str[len] = '\0';
+	len--;
+	if (number < 0)
+		number = -number;
+	while (len >= 0)
 	{
-		*(str + size--) = nbr % 10 + '0';
-		nbr = nbr / 10;
+		str[len] = (number % 10) + '0';
+		len--;
+		number = number / 10;
 	}
-	if (size == 0 && str[1] == '\0')
-		*(str + size) = '0';
-	else if (size == 0 && str[1] != '\0')
-		*(str + size) = '-';
+	if (ft_sign(n))
+		str[0] = '-';
 	return (str);
 }
 
@@ -72,12 +70,10 @@ char	*ft_itoa(int n)
     int n = 12;
     int n1 = -12;
     int n2 = 0;
-
     printf("%s\n",ft_itoa(n)); 
     printf("%s\n",ft_itoa(n1)); 
     printf("%s",ft_itoa(n2)); 
-} 
-*/
+} */
 
 /* 
 ** The itoa() function coverts the integer n into 

@@ -6,49 +6,42 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:34:23 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 13:46:36 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 13:58:57 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_isspace(int c)
-{
-	if (c == '\v' || c == '\n' || c == '\t'
-		|| c == '\r' || c == '\f' || c == ' ')
-		return (1);
-	return (0);
-}
-
 int	ft_atoi(const char *str)
 {
-	int		sign;
-	int		result;
+	int	i;
+	int	a;
+	int	tmp;
 
-	sign = 1;
-	result = 0;
-	while (ft_isspace(*str))
-		str++;
-	if (*str == '+' || *str == '-')
+	i = 0;
+	a = 1;
+	tmp = 0;
+	while (str[i] == ' ' || (str[i] <= '\r' && str[i] >= '\t'))
+		i++;
+	if (str[i] == '+' || str[i] == '-')
 	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
+		if (str[i] == '-')
+			a *= -1;
+		i++;
 	}
-	while (ft_isdigit(*str))
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = result * 10 + (*str - 48);
-		str++;
+		tmp = tmp * 10 + str[i] - 48;
+		i++;
 	}
-	return (result * sign);
+	return (tmp * a);
 }
 
 /* 
 ** first while : to skip spaces areas
 ** first if : to set the mark ( + or - )
 ** second while : to convert to decimal system and return digit chars  .
-** static keyword : ft_isspace func. just visible inside ft_atoi func.
-**
+
 ** synopis : atoi digit chars convert to int with sign   
 */
 
