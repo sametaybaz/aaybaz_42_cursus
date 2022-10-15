@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 18:43:55 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 20:39:17 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 12:17:16 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ char **ft_split(char const *s, char c)
 	return (tab);
 }
 
-int main(void)
+/* int main(void)
 {
 	char **tab;
 	unsigned int i;
@@ -96,4 +96,4 @@ int main(void)
 		ft_putendl_fd(tab[i], 1);
 		i++;
 	}
-}
+} */

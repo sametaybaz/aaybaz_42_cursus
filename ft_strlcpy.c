@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 23:56:24 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 15:07:57 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/15 12:17:58 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	if (dst == NULL && src == NULL)
-		return (NULL);
+		return (0);
 	srcsize = ft_strlen(src);
 	i = 0;
 	while (i < srcsize && i < dstsize - 1)
