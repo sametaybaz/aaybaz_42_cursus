@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 15:06:54 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 20:11:37 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 22:17:40 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,18 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 }
 
 /* 
+** 
 ** void my_func(unsigned int i, char *str)
-** {
+** {	
 **	printf("address is point: index = %d and the string is %s\n", i, str);
 ** }
 **
-** int main()
+**  int main()
 ** {
-**	  char str[] = "samet";
-**    ft_striteri(str, my_func);
-**    return 0;
-** } 
+**		char str[] = "samet";
+**		ft_striteri(str, my_func);
+**		return 0;
+** }  
 */
 
 /* 

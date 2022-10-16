@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:34:23 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/15 13:58:57 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 20:52:13 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,6 @@ int	ft_atoi(const char *str)
 }
 
 /* 
-** first while : to skip spaces areas
-** first if : to set the mark ( + or - )
-** second while : to convert to decimal system and return digit chars  .
-
-** synopis : atoi digit chars convert to int with sign   
-*/
-
-/* 
 ** int main(void)
 ** {
 **	char *s = "   -2147483647"; // output will be -2147483647
@@ -53,4 +45,12 @@ int	ft_atoi(const char *str)
 **	return (0);
 ** 
 ** } 
+*/
+
+/* 
+** first while : to skip spaces areas
+** first if : to set the mark ( + or - )
+** second while : to convert to decimal system and return digit chars  .
+
+** synopis : atoi digit chars convert to int with sign   
 */

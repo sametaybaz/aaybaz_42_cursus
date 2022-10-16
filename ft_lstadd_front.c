@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:13:19 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/16 20:45:39 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 22:17:54 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 }
 
 /* 
-** #include <stdio.h>
+** 
 ** int	main()
 ** {	
 **	

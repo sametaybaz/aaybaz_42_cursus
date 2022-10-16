@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 12:20:07 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/15 14:45:22 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 20:50:44 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ t_list	*ft_lstnew(void *content)
 */
 
 /* 
+** synopsis:  we create new element as a list of type t_list.
+
 ** t_list new_element = {"samet"}
 ** you can think like that {{content:"samet",next:NULL}} or
 ** {{"samet",NULL}} but because of null we shoulndt 
