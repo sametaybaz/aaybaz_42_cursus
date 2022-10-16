@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/07 16:35:16 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 17:57:50 by aaybaz           ###   ########.fr       */
+/*   Created: 2022/10/16 14:14:46 by aaybaz            #+#    #+#             */
+/*   Updated: 2022/10/16 16:20:41 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,37 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*tmp;
+	char	*usrc;
+	char	*udst;
 
-	tmp = malloc(sizeof(unsigned char) * (len + 1));
+	usrc = (char *)src;
+	udst = (char *)dst;
 	if (dst == NULL && src == NULL)
 		return (NULL);
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
-	free(tmp);
+	if (dst < src)
+		return (ft_memcpy(dst, src, len));
+	if (dst > src)
+	{
+		while (len != 0)
+		{
+			len--;
+			udst[len] = usrc[len];
+		}
+	}
 	return (dst);
 }
 
-/* 
-** int main() 
-** { 
-**   char dest[] = "samet";
-**   char src[] = "aybaz";
+/*
+** #include "stdio.h"
+** int main()
+** {
+**	char str[5] = "ILE";
+**	char *str2 = str + 1;
 **
-**  printf("%s",ft_memmove(dest,src,2));
-** }  
+**	printf("%s",ft_memmove(str2,str,3));
+** } 
 */
 
 /* 
-** Copies 'len' bytes(with temp array) from string 'src' to 'dst'.
-** But Two strings may overlap. output will be (aymet)
+** The memmove() function copies len bytes from string src to string dst.
 */

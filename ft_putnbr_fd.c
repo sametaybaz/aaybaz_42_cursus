@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 17:12:54 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 14:47:01 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 17:37:27 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,19 @@ void	ft_putnbr_fd(int n, int fd)
 }
 
 /* 
+** #include <stdio.h>
+** #include <fcntl.h>
+**
 ** int main()
 ** {
-**    int n = 2147483647;
-**    int n1 = -2147483647;
-**    ft_putnbr_fd(n,1);
-**    ft_putnbr_fd(n1,2);
-** } 
+**   	int n = 2147483647;
+**   	int n1 = -2147483647;
+**	int fd;
+**	fd = open("deneme3.txt",1);
+**	printf("%d",fd);
+**  	ft_putnbr_fd(n,fd);
+**	ft_putnbr_fd(n1,fd);
+** }  
 */
 
 /* 

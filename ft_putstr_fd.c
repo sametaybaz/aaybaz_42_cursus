@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:47:10 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 14:47:41 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 17:22:08 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,16 @@ void	ft_putstr_fd(char *s, int fd)
 }
 
 /* 
+** #include <stdio.h>
+** #include <fcntl.h>
 ** int main()
-** {
-**    char s[] = "samet";
-**    ft_putstr_fd(s,1);
-** } 
-*/
+** {		
+**		int fd;
+**		fd = open("deneme2.txt",1);
+**		ft_putstr_fd("samet",fd);
+**		printf("%d",fd);
+** }  
+** */
 
 /* 
 ** It will write "samet" string to file descriptor.

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:26:02 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 14:37:08 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 17:21:36 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,17 @@ void	ft_putchar_fd(char c, int fd)
 }
 
 /* 
+** #include <stdio.h>
+** #include <fcntl.h>
 ** int main()
-** {
-**    char letter = 'c';
-**    ft_putchar_fd(letter,1);
-**    return (0);
-** } 
-*/
+** {		
+**		int fd;
+**		fd = open("deneme.txt",1);
+**		ft_putchar_fd('a',fd);
+**		printf("%d",fd);
+** }  
+** */
+
 /* 
 ** It will write 'c' char to file descriptor.
 */

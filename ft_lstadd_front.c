@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:13:19 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/15 14:46:59 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 17:06:15 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,13 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 /* 
 ** ft_lst_add_front will provide Adds the element 'new'
 ** at the beginning of the list.
-** my_tlist = {{content2,content1}}; or you can think like ;
-** my_tlist = {{content: content2, next : {content: content1,next: NULL}}}; 
+** you can think like that ;
+** 
+**
+** 
+** my_tlist = {{content: content2, next : {content: content1,next: NULL}}};
+** my_tlist = {{content: content2, next:content1}}
+** ==> my_tlist = {{"content2","content1"}};  
 */
 
 /* 
