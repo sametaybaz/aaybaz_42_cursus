@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 18:51:54 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/13 13:46:00 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 22:26:44 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_calloc(size_t count, size_t size)
 **    int i;
    
 **    count = 10;
-**    ptr =  (int *)ft_calloc(count,sizeof(int)); // allocated 40 bytes
+**    ptr =  (int *)ft_calloc(count,sizeof(int)); 
     
 **    for(i=0; i<count; i++)
 **    {

@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 14:14:46 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/16 16:20:41 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 22:28:00 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 }
 
 /*
-** #include "stdio.h"
+** 
 ** int main()
 ** {
 **	char str[5] = "ILE";

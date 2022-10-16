@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 18:43:55 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/15 17:55:27 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/16 22:29:10 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,19 +81,21 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
-/* int main(void)
-{
-	char **tab;
-	unsigned int i;
-
-	i = 0;
-	tab = ft_split("samet.aybaz", '.');
-	if (!tab[0])
-		ft_putendl_fd("ok\n", 1);
-	while (tab[i] != NULL)
-	{
-		ft_putchar_fd('\n',1);
-		ft_putendl_fd(tab[i], 1);
-		i++;
-	}
-} */
+/* 
+** int main(void)
+** {
+**	char **tab;
+**	unsigned int i;
+**
+**	i = 0;
+**	tab = ft_split("samet.aybaz", '.');
+**	if (!tab[0])
+**		ft_putendl_fd("ok\n", 1);
+**	while (tab[i] != NULL)
+**	{
+**		ft_putchar_fd('\n',1);
+**		ft_putendl_fd(tab[i], 1);
+**		i++;
+**	}
+** } 
+*/
