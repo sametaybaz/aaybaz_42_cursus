@@ -6,7 +6,7 @@
 /*   By: aaybaz <aaybaz@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 22:50:30 by aaybaz            #+#    #+#             */
-/*   Updated: 2022/10/15 15:08:50 by aaybaz           ###   ########.fr       */
+/*   Updated: 2022/10/26 05:37:25 by aaybaz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,22 +33,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_lst);
 }
-/*
-** while(lst) lst nin elemanları üzerinde dolaşcak loop.
-
-** f(lst -> content) dolaşılan her lst elemanının 
-** contentine f fonksiyonu uygulanacak bu sayede yeni liste
-** için yeni elemanlarının yeni contentleri olcak.
-
-** new_elem = ft_lstnew(f(lst->content)) f fonksitonundan
-** uygulanan her lst elemanının contentine ft_lestnew fonks.
-** uygulanarak new_liste için new_element olacak .
-
-** new_element oluşturulamaz ise new_liste del edilip 
-** return null edilecek .
-
-** ft_lstadd_back(&new_lst, new_elem) oluşturulan her new
-** elemanını new_listenin sonuna ekleyecek .
-
-** lst = lst->next; lst her elemanında sırayla dolaşmak için.
-*/
